@@ -15,6 +15,7 @@
         min-height: 100vh;
         margin: 0;
         padding: 20px;
+        box-sizing: border-box;
     }
     .container {
         width: 100%;
@@ -23,6 +24,7 @@
         border-radius: 20px;
         padding: 40px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
     }
     .title {
         text-align: center;
@@ -88,6 +90,31 @@
         text-decoration: underline;
         color: #0056b3;
     }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+        body {
+            padding: 10px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .title {
+            font-size: 1.8em;
+        }
+        .university-card {
+            flex-direction: column;
+            align-items: stretch;
+            padding: 20px;
+        }
+        .uni-name {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+        .details {
+            text-align: center;
+        }
+    }
 </style>
 </head>
 <body>
@@ -118,7 +145,7 @@
     </div>
 
     <div class="university-card">
-        <div class="uni-name">한국공학<br>대학교</div>
+        <div class="uni-name">한국공학대학교</div>
         <div class="details">
             미적용
             <span class="separator">|</span>
@@ -140,7 +167,7 @@
     </div>
 
     <div class="university-card">
-        <div class="uni-name">서울과학<br>기술대학교</div>
+        <div class="uni-name">서울과학기술대학교</div>
         <div class="details">
             미적용
             <span class="separator">|</span>
@@ -179,7 +206,7 @@
             <span class="separator">|</span>
             논술 80% + 교과 20%
             <div class="exam-date">시험일정: 2025년 11월 29일(토)</div>
-            <div class="exam-link"><a href="https://www.iajou.ac.kr/main/" target="_blank">기출문제 바로가기</a></div>
+            <div class="exam-link"><a href="https://www.iajou.ac.kr/" target="_blank">기출문제 바로가기</a></div>
         </div>
     </div>
 
